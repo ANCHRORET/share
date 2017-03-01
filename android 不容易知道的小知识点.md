@@ -1,0 +1,22 @@
+	<RelativeLayout
+            android:id="@+id/bubble"
+            style="@style/chat_content_bubble_style"
+            android:layout_toLeftOf="@id/iv_userhead"
+            android:padding="10dp"
+            android:background="@drawable/speech_bubble">
+            <!--android:layout_marginRight="10dp"-->
+
+            <TextView
+                android:id="@+id/tv_chatcontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:lineSpacingExtra="2dp"
+                android:text="嗨，主播，有事找你！"
+                android:textColor="#333333"
+                android:textSize="14sp"/>
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginRight="15dp"-->
+        </RelativeLayout>
