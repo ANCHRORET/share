@@ -1,0 +1,19 @@
+{
+"configs" : [
+  {
+"server" : "45.78.17.71",
+"server_port" : 443,
+"password" : "NmU2M2ZkZW",
+"method" : "aes-256-cfb",
+"remarks" : ""}
+
+],
+"strategy" : null,
+"index" : 0,
+"global" : false,
+"enabled" : true,
+"shareOverLan" : true,
+"isDefault" : false,
+"localPort" : 1080,
+"pacUrl" : null,
+"useOnlinePac" : false}
