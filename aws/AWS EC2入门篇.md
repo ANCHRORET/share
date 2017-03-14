@@ -14,7 +14,9 @@ Amazon EC2是一个IaaS云服务，主要提供弹性的计算资源，通俗地
 
 #### 相关概念和名词解释 ####
 Instance: 实例，在EC2环境中，虚拟计算环境被称为实例。  
+  
 AMI: Amazon Machine Image，亚马逊系统映像，即实例的预配置模板，其中包含服务器需要的程序包（包括操作系统和其他软件）。  
+  
 IaaS: Infrastructure as a Service, 基础设施即服务。消费者通过Internet可以从完善的计算机基础设施获得服务，这类服务称为基础设施即服务(IaaS)，基于Internet的服务（如存储和数据库）是IaaS的一部分。  
 
 IaaS通常分为三种用法：公有云、私有云和混合云。Amazon EC2在基础设施云中使用公共服务器池(公有云)，更加私有化的服务会使用企业内部数据中心的一组公用或私有服务器池(私有云)，如果在企业数据中心环境中开发软件，那么这两种类型公有云、私有云都能使用(混合云)。  
@@ -45,8 +47,10 @@ Internet上其他类型的服务包括平台即服务(Platform as a Service, Paa
 根据步骤和提示一步步完成即可，最后启动会选择Key Pair。当系统提示提供密钥时，选择Choose an existing key pair，然后选择已创建的密钥对。另外，也可以新建密钥对，选择Create a new key pair，输入密钥对的名称，然后选择Download Key Pair。这是保存私有密钥文件的唯一机会，因此务必单击进行下载，将私有密钥文件保存在安全位置。当启动实例时，需要提供密钥对的名称，当每次连接到实例时，需要提供相应的私有密钥。
 ![launch_select_key_pair.png](./aws_pic/launch_select_key_pair.png)
 
-最后就可以看到Instances页面出现了已创建成功的实例。如果需要SSH到实例，可以点击Instances -> 选择Instance -> Connect查看，Shell Command如下:
-    1 ssh -i <key.pem> <username>@<instance-address>
+最后就可以看到Instances页面出现了已创建成功的实例。如果需要SSH到实例，可以点击Instances -> 选择Instance -> Connect查看，Shell Command如下:  
+
+	1 ssh -i <key.pem> <username>@<instance-address>  
+
 更多说明请参见[Amazon EC2 的设置](http://docs.aws.amazon.com/zh_cn/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html)和[在 Linux 实例上管理用户账户](http://docs.aws.amazon.com/zh_cn/AWSEC2/latest/UserGuide/managing-users.html)
 
 ### Instances Management 实例管理 ###
